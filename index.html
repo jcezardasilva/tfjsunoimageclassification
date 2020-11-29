@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ptBr">
+  <head>
+      <title>TensorFlow</title>
+    <!-- Load the latest version of TensorFlow.js -->
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+  </head>
+  <body>
+    <div id="console"></div>
+    <video autoplay playsinline muted id="webcam" width="600px" height="600px"></video>
+    <br>
+
+    <button id="class-a" class="model val-num">Zero</button>
+    <button id="class-b" class="model val-num">Um</button>
+    <button id="class-c" class="model val-num">Dois</button>
+    <button id="class-d" class="model val-num">Três</button>
+    <button id="class-e" class="model val-num">Quatro</button>
+    <button id="class-f" class="model val-num">Cinco</button>
+    <button id="class-g" class="model val-num">Seis</button>
+    <button id="class-h" class="model val-num">Sete</button>
+    <button id="class-i" class="model val-num">Oito</button>
+    <button id="class-j" class="model val-num">Nove</button>
+    <button id="class-k" class="model val-special">Bloqueio</button>
+    <button id="class-l" class="model val-special">Seta</button>
+    <button id="class-m" class="model val-special">Mais Dois</button>
+    <button id="class-n" class="model val-joker">Coringa</button>
+    <button id="class-o" class="model val-none">Nenhuma Carta</button>
+
+    <br><br><br><br>
+    <button id="download">Download</button>
+    <br><br><br><br>
+    <label>Carregar modelo</label>
+    <br><br>
+    <input id="uploadFile" type="file" name="upload">
+
+    <script src="index.js"></script>
+  </body>
+</html>
